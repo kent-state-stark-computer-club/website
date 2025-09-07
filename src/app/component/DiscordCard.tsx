@@ -60,7 +60,7 @@ export default async function DiscordCard({
         target="_blank"
         rel="noopener"
       >
-        Join
+        Apply
       </a>
     </div>
   );

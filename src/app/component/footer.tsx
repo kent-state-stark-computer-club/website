@@ -5,21 +5,27 @@ export default function SiteFooter () {
     return (
         
         <footer className={styles.footer}>
-        <a
-            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <Image
-                aria-hidden
-                src="/file.svg"
-                alt="File icon"
-                width={16}
-                height={16}
-            />
-            Contact Us
-        </a>
+          {/* Toggleable contact form */}
+          <details>
+            <summary className={styles.contactButton} role="button">Contact Us</summary>
+            <form method="post" action="/api/contact" className={styles.contactForm}>
+              <input
+                className={styles.contactInput}
+                type="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+              <input
+                className={styles.contactInput}
+                type="text"
+                name="message"
+                placeholder="Your message"
+                required
+              />
+              <button className={styles.contactButton} type="submit">Send</button>
+            </form>
+          </details>
         <a
             className="flex items-center gap-2 hover:underline hover:underline-offset-4"
             href="https://github.com/kent-state-stark-computer-club"
@@ -48,9 +54,10 @@ export default function SiteFooter () {
             width={16}
             height={16}
             />
-            University website →
+            University website
         </a>
         </footer>
     )
 }
     
+
