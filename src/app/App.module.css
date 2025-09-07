@@ -1,0 +1,108 @@
+.App {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+  
+.layout {
+  display: flex; /* Flex container for the whole page */
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.content {
+  display: flex;
+  background-color: var(--secondary);
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center
+  
+}
+
+.h1 {
+  display: flex;
+  font-family: monospace;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+} 
+
+.h2 {
+  display: flex;
+  color: #000000;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Discord card wrapper extracted from Tailwind utilities */
+.discordCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem; /* gap-3 */
+  padding: 14px 1rem; /* py-[14px] px-4 */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* border + border-black/10 */
+  border-radius: 12px; /* rounded-xl */
+  max-width: 520px; /* max-w-[520px] */
+  background: #ffffff; /* bg-white */
+  color: #171717; /* text-neutral-900 */
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    gap: 0.75rem; /* gap-3 */
+    /*padding: 14px 1rem;  py-[14px] px-4 */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* border + border-black/10 */
+     /*border-radius: 12px; rounded-xl */
+    /*max-width: 520px;  max-w-[520px] */
+    background: #ffffff; /* bg-white */
+    color: #171717; /* text-neutral-900 */
+}
+
+.contentBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.75rem; /* gap-3 */
+  padding: 14px 1rem; /* py-[14px] px-4 */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* border + border-black/10 */
+  border-radius: 12px; /* rounded-xl */
+  max-width: 1000px; /* max-w-[520px] */
+  background: #ffffff; /* bg-white */
+  color: #171717; /* text-neutral-900 */
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  .discordCard {
+    background: #111111; /* dark:bg-[#111] */
+    color: #ffffff; /* dark:text-white */
+    border-color: rgba(255, 255, 255, 0.15); /* dark:border-white/15 */
+  }
+  .footer {
+    background: #111111d7; /* dark:bg-[#111] */
+    color: #ffffff; /* dark:text-white */
+    border-color: rgba(255, 255, 255, 0.15); /* dark:border-white/15 */
+  }
+  .contentBox {
+    background: #111111d7; /* dark:bg-[#111] */
+    color: #ffffff; /* dark:text-white */
+    border-color: rgba(255, 255, 255, 0.15); /* dark:border-white/15 */
+  }
+  
+}
