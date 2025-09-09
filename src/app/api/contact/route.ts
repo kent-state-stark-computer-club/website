@@ -52,8 +52,7 @@ export async function POST(req: NextRequest) {
       status: 303,
       headers: { Location: `/?contact=sent` },
     });
-  } catch (err) {
+  } catch (_err) {
     return new Response("Server error", { status: 500 });
   }
 }
-

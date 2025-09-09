@@ -1,4 +1,5 @@
 // app/components/DiscordCard.tsx
+import Image from "next/image";
 import styles from "@/app/App.module.css";
 
 type InviteData = {
@@ -42,11 +43,16 @@ export default async function DiscordCard({
   const online = data?.approximate_presence_count ?? 0;
   const members = data?.approximate_member_count ?? 0;
   return (
-    <div className={styles.discordCard}>
-      <img
-        className="w-14 h-14 rounded-xl object-cover flex-none bg-[#232428]"
-        src={icon ?? "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='128' height='128'><rect width='100%' height='100%' fill='%23222228'/></svg>"}
+    <div className={`${styles.discordCard} ${className}`}>
+      <Image
+        className="rounded-xl flex-none bg-[#232428]"
+        src={
+          icon ??
+          "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='128' height='128'><rect width='100%' height='100%' fill='%23222228'/></svg>"
+        }
         alt="Server icon"
+        width={56}
+        height={56}
       />
       <div className="flex-1 min-w-0">
         <div className="font-bold text-base leading-5 truncate">{name}</div>

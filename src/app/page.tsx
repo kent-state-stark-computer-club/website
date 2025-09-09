@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Suspense } from "react";
 import DiscordCard from "@/app/component/DiscordCard";
 import StyleFooter from "@/app/component/footer";

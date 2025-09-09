@@ -1,6 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-import type { FC, ReactNode } from 'react';
+import type { FC } from 'react';
 import styles from '@/app/App.module.css'
 
 // --- Type Definitions ---
@@ -14,35 +14,32 @@ interface TimeLeft {
 
 // No longer need CountdownProps as the target date is calculated internally
 
-interface MockComponentProps {
-    children: ReactNode;
-    className?: string;
-    [key: string]: any; // Allow other props
-}
+type DivProps = React.HTMLAttributes<HTMLDivElement>;
+type H3Props = React.HTMLAttributes<HTMLHeadingElement>;
 
 
 // --- Mock Card Components (with TypeScript) ---
 // In your project, you would import these from '@/components/ui/card'
 
-const Card: FC<MockComponentProps> = ({ children, className = '', ...props }) => (
+const Card: FC<DivProps> = ({ children, className = '', ...props }) => (
   <div className={`bg-card text-card-foreground rounded-xl border shadow-lg ${className}`} {...props}>
     {children}
   </div>
 );
 
-const CardHeader: FC<MockComponentProps> = ({ children, className = '', ...props }) => (
+const CardHeader: FC<DivProps> = ({ children, className = '', ...props }) => (
   <div className={`flex flex-col space-y-1.5 p-6 ${className}`} {...props}>
     {children}
   </div>
 );
 
-const CardTitle: FC<MockComponentProps> = ({ children, className = '', ...props }) => (
+const CardTitle: FC<H3Props> = ({ children, className = '', ...props }) => (
   <h3 className={`text-2xl font-semibold leading-none tracking-tight ${className}`} {...props}>
     {children}
   </h3>
 );
 
-const CardContent: FC<MockComponentProps> = ({ children, className = '', ...props }) => (
+const CardContent: FC<DivProps> = ({ children, className = '', ...props }) => (
   <div className={`p-6 pt-0 ${className}`} {...props}>
     {children}
   </div>
