@@ -108,7 +108,7 @@ const Countdown: FC = () => { // Component no longer takes props
 
   const timeComponents = (Object.keys(timeLeft) as Array<keyof TimeLeft>).map((interval) => {
     return (
-      <div key={interval} className="flex flex-col items-center justify-center bg-neutral-100 dark:bg-neutral-800 p-4 rounded-lg min-w-[80px]">
+      <div key={interval} className={styles.countdownBox}>
         <span className="text-4xl font-bold tracking-tighter">
           {String(timeLeft[interval]).padStart(2, '0')}
         </span>

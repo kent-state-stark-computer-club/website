@@ -30,7 +30,7 @@
   font-family: monospace;
   font-size: 2rem;
   font-weight: bold;
-  color: #ffffff;
+  color: var(--foreground);
   justify-content: center;
   text-align: center;
   margin-bottom: 20px;
@@ -51,7 +51,7 @@
   justify-content: center;
   gap: 0.75rem; /* gap-3 */
   padding: 14px 1rem; /* py-[14px] px-4 */
-  border: 1px solid rgba(0, 0, 0, 0.1); /* border + border-black/10 */
+  border: 1px solid rgb(0, 0, 0); /* border + border-black/10 */
   border-radius: 12px; /* rounded-xl */
   max-width: 520px; /* max-w-[520px] */
   background: #ffffff; /* bg-white */
@@ -68,8 +68,9 @@
     border: 1px solid rgba(0, 0, 0, 0.1); /* border + border-black/10 */
      /*border-radius: 12px; rounded-xl */
     /*max-width: 520px;  max-w-[520px] */
-    background: #ffffff; /* bg-white */
+    background: rgba(255, 253, 253, 0.596); /* bg-white */
     color: #171717; /* text-neutral-900 */
+    font-weight: 600;
 }
 
 /* Contact form styles for footer */
@@ -79,11 +80,23 @@
   gap: 0.5rem;
 }
 
+.countdownBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5; /* neutral-100 */
+  border: 1px solid rgb(0, 0, 0); /* border + border-black/10 */
+  padding: 1rem;            /* p-4 */
+  border-radius: 0.5rem;    /* rounded-lg */
+  min-width: 80px;
+}
+
 .contactInput {
   padding: 8px 10px;
   border: 1px solid rgba(0,0,0,0.15);
   border-radius: 8px;
-  background: #fff;
+  background: rgba(255, 253, 253, 0.596);
   color: #111;
 }
 
@@ -91,7 +104,7 @@
   padding: 8px 12px;
   border: none;
   border-radius: 8px;
-  color: #fff;
+  color: #010101;
   font-weight: 600;
   cursor: pointer;
 }
@@ -139,10 +152,10 @@
   flex-direction: column;
   gap: 0.75rem; /* gap-3 */
   padding: 14px 1rem; /* py-[14px] px-4 */
-  border: 1px solid rgba(0, 0, 0, 0.1); /* border + border-black/10 */
+  border: 1px solid rgb(0, 0, 0); /* border + border-black/10 */
   border-radius: 12px; /* rounded-xl */
   max-width: 1000px; /* max-w-[520px] */
-  background: #ffffff; /* bg-white */
+  background: rgba(255, 253, 253, 0.596); /* bg-white */
   color: #171717; /* text-neutral-900 */
   margin-bottom: 20px;
 }
@@ -165,5 +178,17 @@
     color: #ffffff; /* dark:text-white */
     border-color: rgba(255, 255, 255, 0.15); /* dark:border-white/15 */
   }
-  
+
+  .contactButton {
+    color: #ffffff;
+  }
+
+  .countdownBox {
+    background-color: rgba(255, 255, 255, 0.215); /* neutral-100 */
+      text-shadow:
+        -1px -1px 0 rgb(64, 64, 64),
+         1px -1px 0 rgb(64, 64, 64),
+        -1px  1px 0 rgb(64, 64, 64),
+         1px  1px 0 rgb(64, 64, 64);
+  } 
 }

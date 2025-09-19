@@ -12,6 +12,7 @@ export default function Home() {
           <Countdown />
           <div className={styles.contentBox}>
             <div className={styles.h1}> Part of Kent State Computer Science?</div>
+            
             <div className={styles.h1}> Join our club!</div>
             <Suspense fallback={<div>Loading Discord…</div>}>
               <DiscordCard />
