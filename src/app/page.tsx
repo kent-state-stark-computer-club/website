@@ -3,6 +3,7 @@ import DiscordCard from "@/app/component/DiscordCard";
 import StyleFooter from "@/app/component/footer";
 import styles from "@/app/App.module.css"
 import Countdown from "./component/countdown";
+import { Analytics } from "@vercel/analytics/next"
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
         </div>
       </main>
       <StyleFooter />
+      <Analytics />
     </div>
+    
   );
 }
