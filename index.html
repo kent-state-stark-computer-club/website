@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kent State Stark Computer Club</title>
+  <meta name="description" content="Kent State Stark Computer Club. Weekly meetings, coding projects, and Discord community.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="theme-color" content="#080b12">
+  <style>:root{--bg:#090c14;--card:rgba(18,24,38,0.75);--border:rgba(255,255,255,0.08);--border-hover:rgba(255,255,255,0.15);--text:#f0f4fc;--muted:#8b9bb4;--dim:#5c6b84;--gold:#eeb111;--gold-glow:rgba(238,177,17,0.15);--discord:#5865f2;--discord-hover:#4752c4;--success:#10b981;--radius:14px;--mono:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}@media (prefers-color-scheme:light){:root{--bg:#f4f6fa;--card:rgba(255,255,255,0.88);--border:rgba(0,24,60,0.08);--border-hover:rgba(0,24,60,0.16);--text:#0d1526;--muted:#4b5870;--dim:#7a889f;--gold:#b37d00;--gold-glow:rgba(179,125,0,0.12);}}*{box-sizing:border-box;margin:0;padding:0;}body{background-color:var(--bg);background-image:radial-gradient(ellipse at 50% 0%,rgba(0,38,100,0.35) 0%,transparent 65%),radial-gradient(circle at 80% 80%,var(--gold-glow) 0%,transparent 50%);color:var(--text);font-family:var(--sans);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:1.5rem 1rem;line-height:1.5;-webkit-font-smoothing:antialiased;}main{width:100%;max-width:540px;display:flex;flex-direction:column;gap:1.25rem;margin:auto 0;padding:0.5rem 0;}.header{text-align:center;display:flex;flex-direction:column;align-items:center;gap:0.4rem;}.badge{display:inline-flex;align-items:center;gap:0.5rem;padding:0.3rem 0.8rem;background:var(--card);border:1px solid var(--border);border-radius:999px;font-size:0.8rem;font-weight:600;color:var(--gold);}.badge-dot{width:7px;height:7px;background:var(--gold);border-radius:50%;box-shadow:0 0 8px var(--gold);animation:pulse 2s infinite ease-in-out;}@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.4;transform:scale(0.85);}}h1{font-size:1.85rem;font-weight:800;letter-spacing:-0.02em;line-height:1.2;}.subtitle{color:var(--muted);font-size:0.95rem;max-width:420px;}.card{background:var(--card);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;box-shadow:0 4px 20px rgba(0,0,0,0.08);transition:border-color 0.15s ease;}.card:hover{border-color:var(--border-hover);}.card-title{font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--dim);margin-bottom:0.85rem;display:flex;justify-content:space-between;align-items:center;}.meeting-badge{font-size:0.75rem;color:var(--gold);font-weight:600;text-transform:none;}.countdown-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0.5rem;}.time-box{background:rgba(0,0,0,0.12);border:1px solid var(--border);border-radius:10px;padding:0.75rem 0.25rem;text-align:center;}@media (prefers-color-scheme:light){.time-box{background:rgba(0,0,0,0.03);}}.time-num{display:block;font-family:var(--mono);font-size:1.75rem;font-weight:800;line-height:1.1;font-variant-numeric:tabular-nums;}.time-label{display:block;font-size:0.65rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--dim);margin-top:0.25rem;}.discord-card{display:flex;align-items:center;gap:0.9rem;padding:1.15rem;}.server-icon{width:50px;height:50px;border-radius:12px;background:#202225;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden;}.server-icon svg{width:28px;height:28px;fill:#fff;}.server-info{flex:1;min-width:0;}.server-name{font-weight:700;font-size:1rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}.server-stats{font-size:0.82rem;color:var(--muted);display:flex;align-items:center;gap:0.4rem;margin-top:0.2rem;}.online-dot{width:8px;height:8px;background:var(--success);border-radius:50%;box-shadow:0 0 6px rgba(16,185,129,0.6);}.btn-discord{background:var(--discord);color:#fff;font-weight:700;font-size:0.88rem;padding:0.6rem 1.1rem;border-radius:8px;text-decoration:none;white-space:nowrap;transition:background 0.15s ease,transform 0.15s ease;flex-shrink:0;}.btn-discord:hover{background:var(--discord-hover);transform:translateY(-1px);}details.contact-details{width:100%;}details.contact-details summary{cursor:pointer;list-style:none;user-select:none;font-size:0.85rem;font-weight:600;color:var(--muted);display:inline-flex;align-items:center;gap:0.4rem;padding:0.4rem 0.8rem;border-radius:8px;border:1px solid var(--border);background:var(--card);transition:color 0.15s,border-color 0.15s;}details.contact-details summary::-webkit-details-marker{display:none;}details.contact-details summary:hover{color:var(--text);border-color:var(--border-hover);}.contact-form{margin-top:0.75rem;display:flex;flex-direction:column;gap:0.5rem;}.contact-input{width:100%;padding:0.65rem 0.85rem;border-radius:8px;background:rgba(0,0,0,0.18);border:1px solid var(--border);color:var(--text);font-family:var(--sans);font-size:0.9rem;}@media (prefers-color-scheme:light){.contact-input{background:#fff;}}.contact-input:focus{outline:none;border-color:var(--gold);}.btn-submit{align-self:flex-start;background:var(--text);color:var(--bg);font-weight:700;font-size:0.85rem;padding:0.55rem 1.1rem;border-radius:8px;border:none;cursor:pointer;}.toast{display:none;padding:0.6rem 0.9rem;border-radius:8px;font-size:0.85rem;margin-top:0.5rem;background:rgba(16,185,129,0.15);border:1px solid var(--success);color:var(--success);}footer{width:100%;max-width:540px;display:flex;flex-direction:column;align-items:center;gap:0.75rem;padding-top:1rem;border-top:1px solid var(--border);font-size:0.82rem;color:var(--dim);}.footer-links{display:flex;align-items:center;flex-wrap:wrap;justify-content:center;gap:1.25rem;}.footer-link{display:inline-flex;align-items:center;gap:0.4rem;color:var(--muted);text-decoration:none;font-weight:500;transition:color 0.15s;}.footer-link:hover{color:var(--text);}.footer-link svg{width:15px;height:15px;fill:currentColor;}.privacy-note{text-align:center;font-size:0.75rem;color:var(--dim);}.privacy-note a{color:var(--dim);text-decoration:underline;}@media (max-width:480px){.discord-card{flex-direction:column;text-align:center;}.server-stats{justify-content:center;}.btn-discord{width:100%;}h1{font-size:1.5rem;}.time-num{font-size:1.4rem;}}</style>
+</head>
+<body>
+  <main>
+    <header class="header">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>Kent State University • Stark</span>
+      </div>
+      <h1>Computer Science Club</h1>
+      <p class="subtitle">Part of Kent State CS? Join our community, build projects, and collaborate.</p>
+    </header>
+
+    <section class="card" aria-label="Next Meeting Countdown">
+      <div class="card-title">
+        <span>Next Club Meeting</span>
+        <span class="meeting-badge">Fridays @ 11:30 AM EST</span>
+      </div>
+      <div class="countdown-grid" id="countdown">
+        <div class="time-box"><span class="time-num" id="days">--</span><span class="time-label">Days</span></div>
+        <div class="time-box"><span class="time-num" id="hours">--</span><span class="time-label">Hours</span></div>
+        <div class="time-box"><span class="time-num" id="minutes">--</span><span class="time-label">Mins</span></div>
+        <div class="time-box"><span class="time-num" id="seconds">--</span><span class="time-label">Secs</span></div>
+      </div>
+    </section>
+
+    <section class="card discord-card" aria-label="Discord Community">
+      <div class="server-icon" id="serverIcon">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.893.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+      </div>
+      <div class="server-info">
+        <div class="server-name" id="serverName">KSU Stark Computer Club</div>
+        <div class="server-stats">
+          <span class="online-dot"></span>
+          <span id="memberCount">Active Community</span>
+        </div>
+      </div>
+      <a class="btn-discord" id="discordLink" href="https://discord.gg/invites" target="_blank" rel="noopener noreferrer">Join Discord</a>
+    </section>
+
+    <details class="contact-details" id="contactDetails">
+      <summary role="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <span>Contact Club Officers</span>
+      </summary>
+      <form class="contact-form" method="POST" action="/api/contact" id="contactForm">
+        <input class="contact-input" type="email" name="email" placeholder="Your email (e.g. name@kent.edu)" required>
+        <textarea class="contact-input" name="message" rows="3" placeholder="How can we help?" required style="resize:vertical"></textarea>
+        <button class="btn-submit" type="submit">Send Message</button>
+      </form>
+      <div class="toast" id="contactToast">Message sent successfully! We will get back to you soon.</div>
+    </details>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a class="footer-link" href="https://github.com/kent-state-stark-computer-club" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        <span>Club GitHub</span>
+      </a>
+      <a class="footer-link" href="https://www.kent.edu/stark/computer-science" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+        <span>Kent State CS</span>
+      </a>
+    </div>
+    <p class="privacy-note">
+      This site uses privacy-preserving analytics from Vercel.
+      <a href="https://vercel.com/docs/analytics" target="_blank" rel="noopener noreferrer">Learn more</a>.
+    </p>
+  </footer>
+
+  <script>function getTarget() {
+const now = new Date();
+const ny = new Date(now.toLocaleString("en-US", { timeZone: "America/New_York" }));
+let days = (5 - ny.getDay() + 7) % 7;
+const t = new Date(ny);
+t.setHours(11, 30, 0, 0);
+if (days === 0 && ny.getTime() >= t.getTime()) days = 7;
+t.setDate(t.getDate() + days);
+return now.getTime() + (t.getTime() - ny.getTime());
+}
+const target = getTarget();
+const dEl = document.getElementById('days');
+const hEl = document.getElementById('hours');
+const mEl = document.getElementById('minutes');
+const sEl = document.getElementById('seconds');
+function tick() {
+const diff = Math.max(0, target - Date.now());
+dEl.textContent = String(Math.floor(diff / 86400000)).padStart(2, '0');
+hEl.textContent = String(Math.floor((diff / 3600000) % 24)).padStart(2, '0');
+mEl.textContent = String(Math.floor((diff / 60000) % 60)).padStart(2, '0');
+sEl.textContent = String(Math.floor((diff / 1000) % 60)).padStart(2, '0');
+}
+tick();
+setInterval(tick, 1000);
+(async () => {
+try {
+const r = await fetch('/api/discord');
+if (!r.ok) return;
+const d = await r.json();
+if (d.name) document.getElementById('serverName').textContent = d.name;
+if (d.approximate_member_count) {
+document.getElementById('memberCount').textContent =
+`${d.approximate_presence_count || 0} online • ${d.approximate_member_count} members`;
+}
+if (d.invite) document.getElementById('discordLink').href = `https:
+if (d.icon_url) {
+const img = new Image();
+img.src = d.icon_url;
+img.alt = 'Icon';
+img.style.cssText = 'width:100%;height:100%;object-fit:cover';
+const iconBox = document.getElementById('serverIcon');
+iconBox.innerHTML = '';
+iconBox.appendChild(img);
+}
+} catch (_) {}
+})();
+if (new URLSearchParams(location.search).get('contact') === 'sent') {
+const details = document.getElementById('contactDetails');
+const toast = document.getElementById('contactToast');
+if (details) details.open = true;
+if (toast) toast.style.display = 'block';
+}</script>
+</body>
+</html>
