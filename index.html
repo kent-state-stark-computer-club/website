@@ -46,16 +46,6 @@
       font-weight: bold;
       letter-spacing: 2px;
     }
-    .counter-box {
-      background: #000;
-      color: #ff3300;
-      border: 2px inset #808080;
-      font-family: "Courier New", monospace;
-      font-size: 16px;
-      font-weight: bold;
-      padding: 2px 6px;
-      letter-spacing: 3px;
-    }
     input, textarea {
       background-color: #001a00;
       color: #00ff66;
@@ -83,7 +73,7 @@
       </font>
       <br>
       <font face="Courier New, monospace" size="2" color="#00FFFF">
-        <i>EST. 1999 • DEPARTMENT OF COMPUTER SCIENCE • NODE: STARK-CS</i>
+        <i>OFFICIAL STUDENT ORGANIZATION • KENT STATE UNIVERSITY STARK</i>
       </font>
     </td>
   </tr>
@@ -136,7 +126,7 @@
         <span id="days">00</span>d : <span id="hours">00</span>h : <span id="minutes">00</span>m : <span id="seconds">00</span>s
       </div>
       <br>
-      <font size="1" color="#888888">[SYNCHRONIZED WITH LOCAL ATOMIC TIME CLOCK]</font>
+      <font size="1" color="#888888">[ALL MAJORS &amp; SKILL LEVELS WELCOME]</font>
     </td>
   </tr>
 
@@ -167,7 +157,7 @@
               &gt;&gt; CONNECT NOW &lt;&lt;
             </a>
             <br><br>
-            <font size="1" color="#FFFF00"><blink>[NO BBS FEES]</blink></font>
+            <font size="1" color="#FFFF00"><blink>[FREE TO JOIN]</blink></font>
           </td>
         </tr>
       </table>
@@ -235,20 +225,20 @@
 
 <br>
 
-<!-- HIT COUNTER & FOOTER -->
+<!-- FOOTER -->
 <table width="680" border="0" cellpadding="4" cellspacing="0">
   <tr>
     <td align="center">
       <font face="Courier New, monospace" size="2" color="#888888">
-        VISITOR COUNT:
-        <span class="counter-box" id="hitCounter">004219</span>
+        This site uses privacy-preserving analytics from Vercel (no cookies or personal data).
+        <a href="https://vercel.com/docs/analytics" target="_blank">Learn more</a>
       </font>
       <br><br>
       <hr size="1" width="80%" color="#333333" noshade>
       <font size="1" color="#666666">
         OPTIMIZED FOR NETSCAPE NAVIGATOR 4.0 & MICROSOFT INTERNET EXPLORER 5.0<br>
         BEST VIEWED AT 800x600 RESOLUTION • 256 COLORS • STRICTLY ARCHIVAL HTML<br>
-        &copy; 1999-2026 KENT STATE UNIVERSITY STARK COMPUTER SCIENCE CLUB • ALL RIGHTS RESERVED
+        KENT STATE UNIVERSITY STARK COMPUTER CLUB • STUDENT ORGANIZATION
       </font>
     </td>
   </tr>
@@ -312,14 +302,6 @@
   if (window.location.search.indexOf('contact=sent') !== -1) {
     document.getElementById('contactToast').style.display = 'block';
   }
-
-  // Retro hit counter increment
-  try {
-    var cnt = parseInt(localStorage.getItem('ksu_hit_count') || '4219', 10) + 1;
-    localStorage.setItem('ksu_hit_count', cnt);
-    var s = '000000' + cnt;
-    document.getElementById('hitCounter').innerText = s.substr(s.length - 6);
-  } catch(e) {}
 </script>
 
 </body>
